@@ -17,6 +17,7 @@ platforms:
 remote_sources:
 - name: cachito-gomod-with-deps
   remote_source:
+    packages: {}
     pkg_managers: []
     ref: 3396e283b156defedd56443099c61ba197eb7504
     repo: https://github.com/openshift-priv/migtools-konflux-build-data
@@ -24,4 +25,4 @@ tags:
 - assembly.test
 - v4.20
 - v4.20.0
-- v4.20.0.20250902.202051
+- v4.20.0.20250902.203555

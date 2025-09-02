@@ -1,8 +1,0 @@
-_output
-kubevirt-velero-plugin
-velero*
-
-.go
-.idea
-
-_ci-configs
