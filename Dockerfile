@@ -35,7 +35,7 @@ ADD https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem /tmp/art
 # End Konflux-specific steps
 ENV __doozer=update BUILD_RELEASE=202509022041.p2.g3396e28.assembly.test.el9 BUILD_VERSION=v4.20.0 OS_GIT_MAJOR=4 OS_GIT_MINOR=20 OS_GIT_PATCH=0 OS_GIT_TREE_STATE=clean OS_GIT_VERSION=4.20.0-202509022041.p2.g3396e28.assembly.test.el9 SOURCE_GIT_TREE_STATE=clean __doozer_group=openshift-4.20 __doozer_key=oadp __doozer_uuid_tag=oadp-v4.20.0-20250902.204115 __doozer_version=v4.20.0 
 ENV __doozer=merge OS_GIT_COMMIT=3396e28 OS_GIT_VERSION=4.20.0-202509022041.p2.g3396e28.assembly.test.el9-3396e28 SOURCE_DATE_EPOCH=1756384322 SOURCE_GIT_COMMIT=3396e283b156defedd56443099c61ba197eb7504 SOURCE_GIT_TAG=3396e28 SOURCE_GIT_URL=https://github.com/migtools/konflux-build-data 
-RUN dnf -y install openssl && microdnf -y reinstall tzdata && microdnf clean all
+RUN dnf -y install openssl && dnf -y reinstall tzdata && dnf clean all
 WORKDIR /
 COPY --from=builder /workspace/oadp-operator/bin/manager .
 COPY oadp-operator/LICENSE /licenses/
