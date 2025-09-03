@@ -12,8 +12,8 @@ COPY .oit/art-unsigned.repo /etc/yum.repos.d/
 RUN curl https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem
 ADD https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem /tmp/art
 # End Konflux-specific steps
-ENV __doozer=update BUILD_RELEASE=202509032154.p2.g2d2cbcc.assembly.test.el9 BUILD_VERSION=v4.20.0 OS_GIT_MAJOR=4 OS_GIT_MINOR=20 OS_GIT_PATCH=0 OS_GIT_TREE_STATE=clean OS_GIT_VERSION=4.20.0-202509032154.p2.g2d2cbcc.assembly.test.el9 SOURCE_GIT_TREE_STATE=clean __doozer_group=openshift-4.20 __doozer_key=oadp __doozer_uuid_tag=oadp-v4.20.0-20250903.215417 __doozer_version=v4.20.0 
-ENV __doozer=merge OS_GIT_COMMIT=2d2cbcc OS_GIT_VERSION=4.20.0-202509032154.p2.g2d2cbcc.assembly.test.el9-2d2cbcc SOURCE_DATE_EPOCH=1756935912 SOURCE_GIT_COMMIT=2d2cbcc36ffc18bcd58779315912ca3e5a8897e6 SOURCE_GIT_TAG=2d2cbcc36 SOURCE_GIT_URL=https://github.com/migtools/konflux-build-data 
+ENV __doozer=update BUILD_RELEASE=202509032203.p2.g2d2cbcc.assembly.test.el9 BUILD_VERSION=v4.20.0 OS_GIT_MAJOR=4 OS_GIT_MINOR=20 OS_GIT_PATCH=0 OS_GIT_TREE_STATE=clean OS_GIT_VERSION=4.20.0-202509032203.p2.g2d2cbcc.assembly.test.el9 SOURCE_GIT_TREE_STATE=clean __doozer_group=openshift-4.20 __doozer_key=oadp __doozer_uuid_tag=oadp-v4.20.0-20250903.220315 __doozer_version=v4.20.0 
+ENV __doozer=merge OS_GIT_COMMIT=2d2cbcc OS_GIT_VERSION=4.20.0-202509032203.p2.g2d2cbcc.assembly.test.el9-2d2cbcc SOURCE_DATE_EPOCH=1756935912 SOURCE_GIT_COMMIT=2d2cbcc36ffc18bcd58779315912ca3e5a8897e6 SOURCE_GIT_TAG=2d2cbcc36 SOURCE_GIT_URL=https://github.com/migtools/konflux-build-data 
 COPY . /workspace
 
 #######################################################################
@@ -62,8 +62,8 @@ COPY .oit/art-unsigned.repo /etc/yum.repos.d/
 RUN curl https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem
 ADD https://certs.corp.redhat.com/certs/Current-IT-Root-CAs.pem /tmp/art
 # End Konflux-specific steps
-ENV __doozer=update BUILD_RELEASE=202509032154.p2.g2d2cbcc.assembly.test.el9 BUILD_VERSION=v4.20.0 OS_GIT_MAJOR=4 OS_GIT_MINOR=20 OS_GIT_PATCH=0 OS_GIT_TREE_STATE=clean OS_GIT_VERSION=4.20.0-202509032154.p2.g2d2cbcc.assembly.test.el9 SOURCE_GIT_TREE_STATE=clean __doozer_group=openshift-4.20 __doozer_key=oadp __doozer_uuid_tag=oadp-v4.20.0-20250903.215417 __doozer_version=v4.20.0 
-ENV __doozer=merge OS_GIT_COMMIT=2d2cbcc OS_GIT_VERSION=4.20.0-202509032154.p2.g2d2cbcc.assembly.test.el9-2d2cbcc SOURCE_DATE_EPOCH=1756935912 SOURCE_GIT_COMMIT=2d2cbcc36ffc18bcd58779315912ca3e5a8897e6 SOURCE_GIT_TAG=2d2cbcc36 SOURCE_GIT_URL=https://github.com/migtools/konflux-build-data 
+ENV __doozer=update BUILD_RELEASE=202509032203.p2.g2d2cbcc.assembly.test.el9 BUILD_VERSION=v4.20.0 OS_GIT_MAJOR=4 OS_GIT_MINOR=20 OS_GIT_PATCH=0 OS_GIT_TREE_STATE=clean OS_GIT_VERSION=4.20.0-202509032203.p2.g2d2cbcc.assembly.test.el9 SOURCE_GIT_TREE_STATE=clean __doozer_group=openshift-4.20 __doozer_key=oadp __doozer_uuid_tag=oadp-v4.20.0-20250903.220315 __doozer_version=v4.20.0 
+ENV __doozer=merge OS_GIT_COMMIT=2d2cbcc OS_GIT_VERSION=4.20.0-202509032203.p2.g2d2cbcc.assembly.test.el9-2d2cbcc SOURCE_DATE_EPOCH=1756935912 SOURCE_GIT_COMMIT=2d2cbcc36ffc18bcd58779315912ca3e5a8897e6 SOURCE_GIT_TAG=2d2cbcc36 SOURCE_GIT_URL=https://github.com/migtools/konflux-build-data 
 RUN dnf -y reinstall tzdata && dnf clean all
 RUN dnf -y install less nmap-ncat openssl && dnf clean all
 COPY --from=builder /workspace/bin/velero velero
@@ -95,7 +95,7 @@ LABEL \
         io.openshift.maintainer.project="OCPBUGS" \
         io.openshift.maintainer.component="Unknown" \
         version="v4.20.0" \
-        release="202509032154.p2.g2d2cbcc.assembly.test.el9" \
+        release="202509032203.p2.g2d2cbcc.assembly.test.el9" \
         io.openshift.build.commit.id="2d2cbcc36ffc18bcd58779315912ca3e5a8897e6" \
         io.openshift.build.source-location="https://github.com/migtools/konflux-build-data" \
         io.openshift.build.commit.url="https://github.com/migtools/konflux-build-data/commit/2d2cbcc36ffc18bcd58779315912ca3e5a8897e6" \
