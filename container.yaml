@@ -17,6 +17,10 @@ platforms:
 remote_sources:
 - name: cachito-gomod-with-deps
   remote_source:
+    packages:
+      gomod:
+      - path: .
+      - path: restic
     pkg_managers:
     - gomod
     ref: 2d2cbcc36ffc18bcd58779315912ca3e5a8897e6
@@ -25,4 +29,4 @@ tags:
 - assembly.test
 - v4.20
 - v4.20.0
-- v4.20.0.20250903.220315
+- v4.20.0.20250903.222034

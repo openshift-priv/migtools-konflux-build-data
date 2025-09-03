@@ -1,0 +1,43 @@
+lockfileVersion: 1
+lockfileVendor: redhat
+arches:
+- arch: x86_64
+  packages:
+  - name: pam
+    evr: 0:1.5.1-24.el9_4
+    checksum: sha256:5ed31c81238280be7151f628a0a60706c42c3074f6ddbd893b4c05974cc5f857
+    repoid: rhel-9-for-x86_64-baseos-eus-rpms__9_DOT_4
+    size: 643759
+    sourcerpm: pam-1.5.1-24.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/x86_64/baseos/os/Packages/p/pam-1.5.1-24.el9_4.x86_64.rpm
+  module_metadata: []
+- arch: aarch64
+  packages:
+  - name: pam
+    evr: 0:1.5.1-24.el9_4
+    checksum: sha256:37c766b7c2c0fccfd760a9485a5a6dce17fd5a3a254f36d9627ae1b901660716
+    repoid: rhel-9-for-aarch64-baseos-eus-rpms__9_DOT_4
+    size: 643307
+    sourcerpm: pam-1.5.1-24.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/aarch64/baseos/os/Packages/p/pam-1.5.1-24.el9_4.aarch64.rpm
+  module_metadata: []
+- arch: s390x
+  packages:
+  - name: pam
+    evr: 0:1.5.1-24.el9_4
+    checksum: sha256:828b6f15c37009250dc72bc14036077afa47e671aff4be012ec7f3bd085727f6
+    repoid: rhel-9-for-s390x-baseos-eus-rpms__9_DOT_4
+    size: 636797
+    sourcerpm: pam-1.5.1-24.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/s390x/baseos/os/Packages/p/pam-1.5.1-24.el9_4.s390x.rpm
+  module_metadata: []
+- arch: ppc64le
+  packages:
+  - name: pam
+    evr: 0:1.5.1-24.el9_4
+    checksum: sha256:a95b381958d32f209a24df87126aff9a9952dfd57330ff5b3f42768ad25363a2
+    repoid: rhel-9-for-ppc64le-baseos-eus-rpms__9_DOT_4
+    size: 683301
+    sourcerpm: pam-1.5.1-24.el9_4.src.rpm
+    url: https://rhsm-pulp.corp.redhat.com/content/eus/rhel9/9.4/ppc64le/baseos/os/Packages/p/pam-1.5.1-24.el9_4.ppc64le.rpm
+  module_metadata: []
