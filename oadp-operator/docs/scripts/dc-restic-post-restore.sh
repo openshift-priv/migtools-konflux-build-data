@@ -1,1 +1,0 @@
-./dc-post-restore.sh

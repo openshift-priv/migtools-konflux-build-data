@@ -17,14 +17,12 @@ platforms:
 remote_sources:
 - name: cachito-gomod-with-deps
   remote_source:
-    packages:
-      gomod:
-      - path: oadp-operator/oadp-operator
-    pkg_managers: []
-    ref: 3396e283b156defedd56443099c61ba197eb7504
+    pkg_managers:
+    - gomod
+    ref: 2d2cbcc36ffc18bcd58779315912ca3e5a8897e6
     repo: https://github.com/openshift-priv/migtools-konflux-build-data
 tags:
 - assembly.test
 - v4.20
 - v4.20.0
-- v4.20.0.20250902.211708
+- v4.20.0.20250903.215417
